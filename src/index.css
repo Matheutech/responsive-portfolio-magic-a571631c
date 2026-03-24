@@ -216,18 +216,6 @@
     scroll-padding-top: 5rem;
   }
 
-  *, *::before, *::after {
-    transition-property: background-color, border-color, color, box-shadow;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-  }
-
-  .no-theme-transition,
-  [class*="animate-"],
-  .card-hover {
-    transition-property: none;
-  }
-
   .card-hover {
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
                 box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
