@@ -129,7 +129,7 @@
     border-radius: 2px;
   }
 
-  .card-hover:not(.no-theme-transition) {
+  .card-hover {
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
                 box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
                 border-color 0.4s ease,
@@ -137,15 +137,15 @@
   }
 
   .card-hover:hover {
-    transform: translateY(-6px);
+    transform: translateY(-3px);
     box-shadow: 0 20px 50px -12px hsl(var(--card-glow) / 0.12),
                 0 8px 20px -8px hsl(225 60% 2% / 0.6);
     border-color: hsl(var(--accent) / 0.3);
   }
 
-  @media (max-width: 640px) {
+  @media (min-width: 641px) {
     .card-hover:hover {
-      transform: translateY(-3px);
+      transform: translateY(-6px);
     }
   }
 
@@ -216,23 +216,6 @@
     scroll-padding-top: 5rem;
   }
 
-  *, *::before, *::after {
-    transition-property: background-color, border-color, color, box-shadow;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-  }
-
-  .no-theme-transition,
-  [class*="animate-"],
-  .card-hover {
-    transition-property: none;
-  }
-
-  .card-hover {
-    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-                border-color 0.4s ease;
-  }
 
   .border-gradient {
     border: 1px solid transparent;
